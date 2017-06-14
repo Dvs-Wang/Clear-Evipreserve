@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="800.0" styleClass="pane" stylesheets="@mycss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.NoticeController">
+   <children>
+      <AnchorPane layoutX="-4.0" prefHeight="528.0" prefWidth="806.0" styleClass="AnchorPane">
+         <children>
+            <Button fx:id="OkBt" layoutX="233.0" layoutY="448.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="36.0" prefWidth="335.0" text="Ok , I have noticed" />
+            <TextArea fx:id="noticeTextArea" editable="false" layoutX="103.0" layoutY="50.0" prefHeight="379.0" prefWidth="616.0" styleClass="text-areas" text="  The table you will fill out contains some most important ele&#10;ments in the forensic process. If your evidence file lacks some&#10;of them, it will be a good choice to add them during the step.&#10;Also, you need to explain the brief usage of your evidence and&#10;make your pivotal statement. Not all of the  blanks will be need&#10;-ed.(You can ignore some of them for the privacy cause!)&#10;&#10;  Most important! Do not try to add any fake or unfaithful desc&#10;-ription. As a result of fact that the table will be transfered to &#10;the server and be preserved on the blockchain along with the&#10;digest of your evidence. Such conduct will make the evidence&#10;totally lose its credibility.&#10;&#10;  Furthermore, after you have finished filling out the table. You&#10;can download a copy file of the data by press the button 'D' &#10;in the upper story. The file will be needed during the forensic &#10;process. So it is recommanded to store it in physical medium.&#10;If you lose or modify the copy, you can log in to get another&#10;copy preserved in the data server.&#10;&#10;" AnchorPane.leftAnchor="103.0" AnchorPane.rightAnchor="87.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

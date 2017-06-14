@@ -1,0 +1,29 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="JavaHelps" transaction-type="RESOURCE_LOCAL">
+        <!-- Persistence provider -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- Entity classes -->
+        <class>com.wang.serverDb.ClientUser</class>
+        <class>com.wang.serverDb.Evidence</class>
+        <class>com.wang.serverDb.CombinedEvidence</class>
+        <class>com.wang.serverDb.EvidenceChain</class>
+        <class>com.wang.serverDb.AuthInstitution</class>
+        <class>com.wang.serverDb.AuthReply</class>
+
+        <properties>
+            <!-- The JDBC URL to the database instance -->
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/serverdb?useSSL=false&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+
+            <!-- The database username -->
+            <property name="javax.persistence.jdbc.user" value="" />
+
+            <!-- The database password -->
+            <property name="javax.persistence.jdbc.password" value="" />
+        </properties>
+    </persistence-unit>
+</persistence>

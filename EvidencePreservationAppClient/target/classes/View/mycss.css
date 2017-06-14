@@ -1,0 +1,178 @@
+
+
+.titledPane > .title {
+    -fx-background-color: #26272B;
+}
+
+.titledPane
+{
+    -fx-text-fill: #E3E3E4;
+}
+
+.titledPane > .title > .arrow-button .arrow
+{
+    -fx-background-color: #B82525;
+}
+
+.titledPane:disabled
+{
+    -fx-text-fill: #444649;
+    -fx-background-color: #26272B;
+}
+
+.titledPane:focused  > .title
+{
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #B82525;
+}
+
+.AnchorPane{
+    -fx-background-color: #16181C;
+}
+
+
+
+
+.label{
+    -fx-font: bold 10pt "Arial";
+    -fx-text-fill: #949699;
+}
+
+.labelLarge{
+    -fx-font: bold 18pt "Arial";
+    -fx-text-fill: #949699;
+}
+
+.labelNote{
+    -fx-font: bold 9pt "Arial";
+    -fx-text-fill: #B82525;
+    -fx-border-color: lightgray;
+    -fx-border-style: dashed;
+}
+
+.menu-button{
+    -fx-text-fill: #E3E3E4;
+    -fx-text-base-color: #E3E3E4;
+    -fx-background-color: #2A2A2D;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+.menu-button .arrow{
+    -fx-background-color: #B82525;
+}
+
+.menu-button .label{
+    -fx-font: bold 12pt "Arial";
+    -fx-text-fill: #E3E3E4;
+}
+
+.context-menu{
+    -fx-background-color: #2A2A2D;
+}
+
+.menu-item .label{
+    -fx-font: bold 10pt "Arial";
+    -fx-text-fill: #E3E3E4;
+}
+
+.button{
+    -fx-text-fill: #E3E3E4;
+    -fx-background-color: #2A2A2D;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+    -fx-font: bold 12pt "Arial";
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+.text-field{
+    -fx-background-color: #2A2A2D;
+    -fx-text-fill: #E3E3E4;
+    -fx-font: bold 10pt "Arial";
+}
+
+.text-area{
+    -fx-text-fill: #E3E3E4;
+    -fx-font: bold 10pt "Arial";
+}
+.text-area .content{
+    -fx-background-color: #2A2A2D;
+    -fx-font: bold 10pt "Arial";
+}
+
+.text-areas{
+    -fx-text-fill: #E3E3E4;
+    -fx-font: bold 15pt "Arial";
+
+}
+.text-areas .content{
+    -fx-background-color: #2A2A2D;
+    -fx-font: bold 15pt "Arial";
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #B82525;
+
+}
+
+.tab-pane .tab:disabled
+{
+    -fx-background-color: #2A2A2D;
+}
+.tab-pane .tab{
+    -fx-background-color: #2A2A2D;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #E3E3E4;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-color: #16181C;
+}
+
+.choice-box{
+    -fx-background-color: #2A2A2D;
+    -fx-text-fill: #E3E3E4;
+}
+.pane {
+    -fx-background-color: #16181C;
+}
+
+.gridpane{
+    -fx-grid-lines-visible: true;
+}
+
+.lineSep{
+    -fx-fill: #B82525;
+    -fx-stroke: #B82525;
+    -fx-stroke-dash-array: 5px ;
+    -fx-opacity: 0.4;
+}
+
+.labelSpecial{
+    -fx-text-fill: #E3E3E4;
+}
+
+.radio-button {
+    -fx-text-fill: #949699;
+}
+
+
+
+
+
+
+
+
+

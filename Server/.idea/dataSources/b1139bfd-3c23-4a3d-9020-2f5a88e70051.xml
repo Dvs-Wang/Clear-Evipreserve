@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="serverdb@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="serverdb">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sakila"/>
+    <schema id="7" parent="1" name="serverdatabase"/>
+    <schema id="8" parent="1" name="test"/>
+    <schema id="9" parent="1" name="world"/>
+    <table id="10" parent="2" name="authinstitution"/>
+    <table id="11" parent="2" name="authreply"/>
+    <table id="12" parent="2" name="clientuser"/>
+    <table id="13" parent="2" name="combinedevidence"/>
+    <table id="14" parent="2" name="evidence"/>
+    <table id="15" parent="2" name="evidencechain"/>
+    <column id="16" parent="10" name="ID">
+      <Position>1</Position>
+      <DataType>char(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="10" name="saltAddedPassword">
+      <Position>2</Position>
+      <DataType>char(118)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="10" name="authPbkeyList">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="19" parent="10" name="proofTxHash">
+      <Position>4</Position>
+      <DataType>char(64)|0</DataType>
+    </column>
+    <column id="20" parent="10" name="authLog">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="21" parent="10" name="isProofTxConfirmed">
+      <Position>6</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="22" parent="10" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="23" parent="11" name="auditDigest">
+      <Position>1</Position>
+      <DataType>char(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="11" name="evidenceDigest">
+      <Position>2</Position>
+      <DataType>char(64)|0</DataType>
+    </column>
+    <column id="25" parent="11" name="authTimestamp">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="26" parent="11" name="isConfirmed">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="27" parent="11" name="institutionBody">
+      <Position>5</Position>
+      <DataType>char(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="11" name="authTxHash">
+      <Position>6</Position>
+      <DataType>char(64)|0</DataType>
+    </column>
+    <index id="29" parent="11" name="AuthReply_auditDigest_uindex">
+      <ColNames>auditDigest</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="30" parent="11" name="PRIMARY">
+      <ColNames>auditDigest</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="31" parent="11" name="AuthReply_auditDigest_uindex">
+      <ColNames>auditDigest</ColNames>
+      <UnderlyingIndexName>AuthReply_auditDigest_uindex</UnderlyingIndexName>
+    </key>
+    <column id="32" parent="12" name="email">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="12" name="saltAddedPassword">
+      <Position>2</Position>
+      <DataType>char(118)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="12" name="eckeyEncrypted">
+      <Position>3</Position>
+      <DataType>char(160)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="35" parent="12" name="PRIMARY">
+      <ColNames>email</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="13" name="combinedEvidenceId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="37" parent="13" name="digest">
+      <Position>2</Position>
+      <DataType>char(64)|0</DataType>
+    </column>
+    <column id="38" parent="13" name="seedDigest">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="13" name="timeStamper">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="40" parent="13" name="txHash">
+      <Position>5</Position>
+      <DataType>char(64)|0</DataType>
+    </column>
+    <column id="41" parent="13" name="isConfirmed">
+      <Position>6</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="42" parent="13" name="digestNum">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="43" parent="13" name="PRIMARY">
+      <ColNames>combinedEvidenceId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="14" name="evidenceId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="45" parent="14" name="digest">
+      <Position>2</Position>
+      <DataType>char(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="14" name="email">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="14" name="message">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="14" name="isConfirmed">
+      <Position>5</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="14" name="isPayed">
+      <Position>6</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="14" name="txHash">
+      <Position>7</Position>
+      <DataType>char(64)|0</DataType>
+    </column>
+    <column id="51" parent="14" name="timeStamp">
+      <Position>8</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="52" parent="14" name="PRIMARY">
+      <ColNames>evidenceId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="53" parent="15" name="ChainId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="54" parent="15" name="email">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="15" name="digestList">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="56" parent="15" name="PRIMARY">
+      <ColNames>ChainId</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
