@@ -1,7 +1,7 @@
 # Clear-Evipreserve
 The project implemented a Lightweight and Manageable Architecture of Decentralized Digital Evidence Preservation System Coded in Java, which can protect user's digital evidence by creating proof of existence and proof of audit on the Bitcoin blockchain.
 We use bitcoinj as the core library of our project, and take Netty as the Network solution. Convenient GUI is designed using JavaFx to offer user a clear undertanding and use of the software. All the functions provided by the software has been tested successfully on the Bitcoin public test network--Testnet3. To build a open and stable service, the code need to be further optimized and checked.<br> 
-There exists three entities in the architecture:<br>
+There exists *three* entities in the architecture:<br>
 ## EvidencePreservationAppClient :<br> 
 the client for user to submit and manage their digital evidence safely and efficiently, here are some demos of the client:<br>
 <img src="https://github.com/Vivid-Wang/Clear-Evipreserve/blob/master/Demo%20gif%20and%20pictures/Offline%20Evidence%20Submission%20and%20Handling.gif" width = "600" alt="Offline Evidence Submission and Handling" /><br>
@@ -29,5 +29,5 @@ The audit end is to assist legal institutions to give audit to the evidence pres
 <img src= "https://github.com/Vivid-Wang/Clear-Evipreserve/blob/master/Demo%20gif%20and%20pictures/Evidence%20Auditing.gif" width = "600" alt="Evidence Auditing" /><br>
 *Evidence Auditing*
 <br>
-
+By accessing the Bitcoin Testnet Address [*mrpxgT7v2xqUnDFy8Haz92LLgwpduEsz98*](https://live.blockcypher.com/btc-testnet/address/mrpxgT7v2xqUnDFy8Haz92LLgwpduEsz98/)<br>, you can see the various types of *evidence-proof txs* and *audit-proof txs* generated during some test of the software.
 Special thanks for Mike Hearn and his tutorial on Youtube which inspires us a lot on the software implementation of the architecture.
